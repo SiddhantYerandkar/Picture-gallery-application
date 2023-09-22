@@ -9,4 +9,4 @@ which also gives the description and name of the author who published the given 
 - Html/Css
 - Javascript
 
-**NOTE: client folder consist of front-end part and server folder is in which the backend consist pls ignore that for now. Further the backend is used to improve and implement more features to the following application.
+NOTE: client folder consist of front-end part and server folder is in which the backend consist pls ignore that for now. Further the backend can be used to improve and implement more features to the following application.
