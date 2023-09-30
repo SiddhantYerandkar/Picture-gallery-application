@@ -15,21 +15,17 @@ export default function GetPictures() {
     const handleSearch = (e) => {
         e.preventDefault()
         const query = category
-        const list = ["food", "landscape"]
 
-        if (list.includes(category)) {
 
-            axios.get(`https://api.unsplash.com/search/photos?page=1&query=${query}&client_id=HacpscyXCXdaajDTPpNkOvmYJcuVJzR-43cBxH4Kzjw`)
-                .then((response) => {
-                    setPictures(response.data.results)
-                })
-                .catch((err) => {
-                    console.log(err);
-                })
+        axios.get(`https://api.unsplash.com/search/photos?page=1&query=${query}&client_id=HacpscyXCXdaajDTPpNkOvmYJcuVJzR-43cBxH4Kzjw`)
+            .then((response) => {
+                setPictures(response.data.results)
+            })
+            .catch((err) => {
+                console.log(err);
+            })
 
-        } else {
-            alert("You can only search for Food and Landscape")
-        }
+
 
     }
 
